@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vishal Sharma | Frontend and AI/ML Student</title>
+  <meta name="description" content="Portfolio of Vishal Sharma, B.Tech CSE (DS &amp; AI) student interested in frontend, full stack and AI/ML.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Full-page black hole background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <video class="bg-video" autoplay muted loop playsinline preload="auto">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="bg-glow"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- Custom cursor (desktop with a mouse only) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">VISHAL <span>SHARMA</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#achievements">Achievements</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="hero-bg-name" aria-hidden="true">VISHAL</p>
+
+      <div class="hero-content">
+        <p class="hero-badge">Open to internships</p>
+        <h1 class="hero-title">VISHAL <span class="hero-title-outline">SHARMA</span></h1>
+        <p class="hero-role" aria-live="polite">
+          <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero-quote">Learning to build things people can actually use.</p>
+        <div class="button-row">
+          <a class="btn btn-fill" href="#projects">Selected work</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+        <p class="hero-socials">
+          <a href="https://github.com/it2Vishal" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/vishalsharma67" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="hero-frame">
+        <img class="hero-frame-photo" src="Portfolio.jpeg" alt="Photo of Vishal Sharma">
+        <small class="hero-frame-caption">B.Tech CSE (DS &amp; AI)<br>SRMU, 2029</small>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <p class="section-kicker">About me</p>
+      <h2 class="section-title">Building a strong foundation in code, one project at a time.</h2>
+
+      <div class="card-grid card-grid-two">
+        <article class="card reveal" id="education">
+          <h3 class="card-label">Education</h3>
+          <p class="card-lead">B.Tech, CSE (DS &amp; AI)</p>
+          <p>Shri Ramswaroop Memorial University</p>
+          <p>Expected graduation: 2029</p>
+          <p>First-year CGPA: 6.22</p>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card-label">Focus</h3>
+          <p class="card-lead">Web Development, AI/ML &amp; Educational Content</p>
+          <p>I'm Vishal, a student learning Python, JavaScript, HTML, CSS and SQL by building small projects and joining hackathons. I also create educational voice videos that explain topics like recurrence relations, and I'm building skills in data structures and digital electronics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <p class="section-kicker">Selected work</p>
+      <h2 class="section-title">Projects I have built so far.</h2>
+
+      <div class="tab-list" id="project-tabs" role="tablist">
+        <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" type="button" data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button class="tab" type="button" data-filter="ai" role="tab" aria-selected="false">AI / ML</button>
+        <button class="tab" type="button" data-filter="full" role="tab" aria-selected="false">Full stack</button>
+      </div>
+
+      <div class="card-grid">
+        <article class="card project-card reveal" data-category="web">
+          <div class="project-thumb">CQ</div>
+          <p class="project-category">Web development</p>
+          <h3 class="card-title">CodeQuiz</h3>
+          <p>A quiz-based web development project.</p>
+          <div class="button-row">
+            <a class="btn" href="https://github.com/it2Vishal/Project01.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="web">
+          <div class="project-thumb">SET</div>
+          <p class="project-category">Web development</p>
+          <h3 class="card-title">Orbit Tracker</h3>
+          <p>Monthly expenses tracking project.</p>
+          <div class="button-row">
+            <a class="btn" href="https://github.com/it2Vishal/Project-02.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <p class="section-kicker">Skills</p>
+      <h2 class="section-title">Languages and tools I work with.</h2>
+
+      <div class="tab-list" id="skill-tabs" role="tablist">
+        <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" type="button" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+        <button class="tab" type="button" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+        <button class="tab" type="button" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+      </div>
+
+      <p class="skill-count">Active nodes: <b id="node-count">8</b> &middot; beginner level, growing with every project</p>
+
+      <ul class="skill-list">
+        <li class="skill-node" data-category="programming">Python</li>
+        <li class="skill-node" data-category="frontend programming">JavaScript</li>
+        <li class="skill-node" data-category="frontend">HTML</li>
+        <li class="skill-node" data-category="frontend">CSS</li>
+        <li class="skill-node" data-category="programming">SQL</li>
+        <li class="skill-node" data-category="tools">VS Code</li>
+        <li class="skill-node" data-category="tools">Canva</li>
+        <li class="skill-node" data-category="tools">GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section reveal" id="achievements">
+      <p class="section-kicker">Achievements</p>
+      <h2 class="section-title">Hackathons, certificates and grades.</h2>
+
+      <div class="card-grid">
+        <article class="card reveal">
+          <b class="stat-number" data-target="3" data-decimals="0" data-suffix="+">3+</b>
+          <h3 class="card-title">Hackathons</h3>
+          <p>Participated in 3+ hackathons.</p>
+        </article>
+
+        <article class="card reveal">
+          <b class="stat-number" data-target="15" data-decimals="0" data-suffix="+">15+</b>
+          <h3 class="card-title">Certificates</h3>
+          <p>Earned 15+ certificates.</p>
+        </article>
+
+        <article class="card reveal">
+          <b class="stat-number" data-target="6.22" data-decimals="2" data-suffix="">6.22</b>
+          <h3 class="card-title">CGPA</h3>
+          <p>First-year CGPA at SRMU.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <p class="section-kicker">Contact</p>
+      <h2 class="section-title">Let's build something together.</h2>
+
+      <div class="card-grid card-grid-two">
+        <div class="card reveal">
+          <h3 class="card-label">Direct reach</h3>
+          <p class="contact-email">
+            <a id="contact-email">vishalsharma97643f@gmail.com</a>
+            <button id="copy-email" type="button">Copy</button>
+          </p>
+          <p><a href="https://github.com/it2Vishal" target="_blank" rel="noopener">GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/vishalsharma67" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+
+        <form class="card contact-form reveal" id="contact-form">
+          <h3 class="card-label">Send a message</h3>
+          <input id="form-name" type="text" placeholder="Your name" required>
+          <input id="form-email" type="email" placeholder="Your email" required>
+          <textarea id="form-message" rows="4" placeholder="Your message" required></textarea>
+          <button class="btn btn-fill" type="submit">Send message</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Vishal Sharma</p>
+    <a href="https://github.com/it2Vishal" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/vishalsharma67" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
